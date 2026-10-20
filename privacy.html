@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="description" content="Privacy information for the personal Second Brain — local n8n Google Drive connection.">
+  <title>Privacy · Second Brain — local n8n</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <nav><a href="index.html">← App information</a></nav>
+    <p class="eyebrow">Second Brain — local n8n</p>
+    <h1>Privacy policy</h1>
+    <p class="lead">This policy describes the personal Google Drive connection and its configured local workflow.</p>
+    <section>
+      <h2>Data accessed and purpose</h2>
+      <p>With the owner's consent, the app uses Google's <code>drive.readonly</code> permission to read file names, identifiers, metadata, and file contents available to that Google account. The configured workflow retrieves selected personal knowledge and planning documents and a spreadsheet snapshot for the owner's local review.</p>
+      <p>Google handles account sign-in. The app receives OAuth access and refresh tokens; it does not receive the Google account password.</p>
+    </section>
+    <section>
+      <h2>Processing and storage</h2>
+      <p>The integration runs in n8n on the owner's computer. n8n stores the OAuth credential in its encrypted credential store. Its execution history can contain retrieved text, file metadata, and downloaded files. These local execution outputs are separate from the original files in Google Drive.</p>
+      <p>Execution data remains subject to the owner's n8n retention settings and manual deletion. Downloads or copies kept elsewhere by the owner must be managed separately.</p>
+    </section>
+    <section>
+      <h2>Data sharing</h2>
+      <p>The configured workflow exchanges authentication and file requests with Google and retrieves the responses into local n8n. It has no step that uploads Drive content to this website, sends it to an AI service, or publishes it.</p>
+      <p>The app does not sell Google user data, use it for advertising, or use it to train generalized AI models. Any future integration that sends content to another service requires a separate configuration and an updated description of that use.</p>
+    </section>
+    <section>
+      <h2>Control and removal</h2>
+      <p>The owner may stop running the workflow, remove its n8n credential, or revoke the app's access from the <a href="https://myaccount.google.com/connections">Google Account connections page</a>. Revoking access prevents future authorized API requests; it does not automatically delete content already downloaded into local execution history.</p>
+      <p>The owner manages deletion of locally stored credentials, execution data, and downloads. The app's read-only permission cannot delete or change the original Drive files.</p>
+    </section>
+    <section>
+      <h2>This information website</h2>
+      <p>These static pages contain no Google sign-in button, forms, analytics scripts, or tracking scripts. They do not request access to visitors' Drive files. When hosted, the hosting provider may process ordinary web-request information under its own privacy policy.</p>
+    </section>
+    <section>
+      <h2>Contact and changes</h2>
+      <p>For questions about the app, use the developer contact shown by Google during authorization. This policy should be updated before changing the app's data access, destinations, or purpose.</p>
+    </section>
+    <footer>Policy date · 20 October 2026</footer>
+  </main>
+</body>
+</html>
