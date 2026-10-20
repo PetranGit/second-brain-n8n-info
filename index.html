@@ -15,7 +15,7 @@
     <p class="lead">A private tool for reading the owner's knowledge and planning documents in a locally hosted n8n workflow.</p>
     <section aria-labelledby="purpose">
       <h2 id="purpose">What the connection does</h2>
-      <p>The owner signs in with Google and authorizes a local n8n instance to read Google Drive. The configured workflow retrieves selected document content and file metadata, and downloads a spreadsheet snapshot for the owner's personal use.</p>
+      <p>The owner signs in with Google and authorizes a local n8n instance to read Google Drive. The configured workflow retrieves the owner's selected knowledge collections and registered sources, downloads a spreadsheet snapshot, and refreshes a local search index for personal use. It can run manually or on the owner's chosen schedule.</p>
       <p>n8n runs on the owner's computer. This website provides information about the connection; it does not provide a sign-in flow or access to the local application.</p>
     </section>
     <section aria-labelledby="access">
@@ -25,7 +25,7 @@
     </section>
     <section aria-labelledby="privacy">
       <h2 id="privacy">Privacy and control</h2>
-      <p>Retrieved content is processed in the owner's local n8n instance. The owner can revoke the connection through their Google Account and manage stored execution data in n8n.</p>
+      <p>Retrieved content is processed on the owner's computer by n8n and local text-extraction and search tools. The owner can revoke the connection through their Google Account and manage stored execution data, downloaded copies and derived search indexes locally.</p>
       <p><a href="privacy.html">Read the privacy policy</a></p>
     </section>
     <section aria-labelledby="contact">
