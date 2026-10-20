@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="description" content="Information about Second Brain — local n8n, a personal Google Drive connection.">
+  <title>Second Brain — local n8n</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <p class="eyebrow">Personal use · Google Drive integration</p>
+    <h1>Second Brain — local n8n</h1>
+    <p class="lead">A private tool for reading the owner's knowledge and planning documents in a locally hosted n8n workflow.</p>
+    <section aria-labelledby="purpose">
+      <h2 id="purpose">What the connection does</h2>
+      <p>The owner signs in with Google and authorizes a local n8n instance to read Google Drive. The configured workflow retrieves selected document content and file metadata, and downloads a spreadsheet snapshot for the owner's personal use.</p>
+      <p>n8n runs on the owner's computer. This website provides information about the connection; it does not provide a sign-in flow or access to the local application.</p>
+    </section>
+    <section aria-labelledby="access">
+      <h2 id="access">Google Drive access</h2>
+      <p>The connection requests <code>drive.readonly</code>, which permits viewing and downloading files available to the authorizing Google account. The permission applies across that account's accessible Drive files. The configured workflow selects particular files to read.</p>
+      <p>This permission does not allow the app to create, edit, rename, delete, or share Drive files. The workflow runs manually when the owner requests it.</p>
+    </section>
+    <section aria-labelledby="privacy">
+      <h2 id="privacy">Privacy and control</h2>
+      <p>Retrieved content is processed in the owner's local n8n instance. The owner can revoke the connection through their Google Account and manage stored execution data in n8n.</p>
+      <p><a href="privacy.html">Read the privacy policy</a></p>
+    </section>
+    <section aria-labelledby="contact">
+      <h2 id="contact">Support</h2>
+      <p>This app is maintained for its owner's personal use. The support contact is the developer email displayed by Google during authorization.</p>
+    </section>
+    <footer>App information · 20 October 2026</footer>
+  </main>
+</body>
+</html>
