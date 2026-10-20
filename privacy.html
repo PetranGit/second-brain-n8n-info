@@ -16,13 +16,13 @@
     <p class="lead">This policy describes the personal Google Drive connection and its configured local workflow.</p>
     <section>
       <h2>Data accessed and purpose</h2>
-      <p>With the owner's consent, the app uses Google's <code>drive.readonly</code> permission to read file names, identifiers, metadata, and file contents available to that Google account. The configured workflow retrieves selected personal knowledge and planning documents and a spreadsheet snapshot for the owner's local review.</p>
+      <p>With the owner's consent, the app uses Google's <code>drive.readonly</code> permission to read file names, identifiers, metadata, and file contents available to that Google account. The configured workflow retrieves the owner's selected knowledge collections, sources linked from their register, and a spreadsheet snapshot. It refreshes a local keyword and semantic search index, manually or on the owner's chosen schedule.</p>
       <p>Google handles account sign-in. The app receives OAuth access and refresh tokens; it does not receive the Google account password.</p>
     </section>
     <section>
       <h2>Processing and storage</h2>
       <p>The integration runs in n8n on the owner's computer. n8n stores the OAuth credential in its encrypted credential store. Its execution history can contain retrieved text, file metadata, and downloaded files. These local execution outputs are separate from the original files in Google Drive.</p>
-      <p>Execution data remains subject to the owner's n8n retention settings and manual deletion. Downloads or copies kept elsewhere by the owner must be managed separately.</p>
+      <p>Execution data remains subject to the owner's n8n retention settings and manual deletion. A local worker stores downloaded working copies, extracted text, source links, content hashes, and search embeddings. Text extraction, OCR and embedding inference run on the owner's computer. Complete index versions and local processing logs may be retained for recovery and review; the owner manages their deletion separately from n8n execution history.</p>
     </section>
     <section>
       <h2>Data sharing</h2>
@@ -32,7 +32,7 @@
     <section>
       <h2>Control and removal</h2>
       <p>The owner may stop running the workflow, remove its n8n credential, or revoke the app's access from the <a href="https://myaccount.google.com/connections">Google Account connections page</a>. Revoking access prevents future authorized API requests; it does not automatically delete content already downloaded into local execution history.</p>
-      <p>The owner manages deletion of locally stored credentials, execution data, and downloads. The app's read-only permission cannot delete or change the original Drive files.</p>
+      <p>The owner manages deletion of locally stored credentials, execution data, downloads, extracted text and search indexes. Removed or inaccessible source files leave the current searchable collection after a successful refresh; older local copies can remain in recovery versions until deleted. The app's read-only permission cannot delete or change the original Drive files.</p>
     </section>
     <section>
       <h2>This information website</h2>
